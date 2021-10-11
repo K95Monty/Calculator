@@ -14,7 +14,7 @@ body {
     font-size: 2em;
     display: grid;
     grid-template-columns: repeat(4, 50px);
-    grid-gap: 4px;
+    grid-gap: 5px;
     justify-content: center;
     align-items: center;
 }
@@ -23,7 +23,8 @@ body {
     grid-column: 1 / span 4;
     padding: 10px;
     border: 3px solid green;
-    box-shadow: 2px 2px 2px blue;
+    box-shadow: 2px 2px 2px blue,
+                -2px 2px 2px blue;
 }
 
 button {
@@ -32,12 +33,15 @@ button {
     height: 50px;
     border: 2px solid green;
     border-radius: 2px;
-    box-shadow: 2px 2px 2px blue;
+    box-shadow: 2px 2px 2px blue,
+                -2px 2px 2px blue;
 }
 
 button:hover, button:active {
     background-color: red;
     box-shadow: 2px 2px 2px blue,
+                -2px 2px 2px blue,
+                -3px 3px 3px blue,
                 3px 3px 3px blue;
 }
 
