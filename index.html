@@ -3,14 +3,47 @@
     <meta>
 
     </meta>
+    <link href="css\styles.css" rel="stylesheet">
 </head>
     <body>
+        
+        
 
-        <p id="input">input</p>
-        <p id="output">output</p>
+        <div class="container">
+            <h1>Calculator</h1>
+            <div id="box"></div>
+            <p id="output">output</p>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number" id="divide">&divide;</button>
+            
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="number" id="subtract">&ndash;</button>
+            
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="" id="times">x</button>
+            
+                <button class="number" id="zero">0</button>
+                <button class="" id="dot">&period;</button>
+                <button class="number" id="add">&plus;</button>
+            
+                <button id="equal" onclick="submit()">AC</button>
+                <button id="delete" onclick="backspace()">DEL</button>
+        </div>
+        
+        <footer>
+            <p>Copyright , created with   Kathy Chapman</p>
+        </footer>
+       
 
+        
 
-        <button id="submit" onclick="submitEquation()">A/C</button>
         <script type="text/javascript" src="js\app.js"></script>
+
     </body>
 </html>

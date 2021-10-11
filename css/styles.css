@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+.container {
+    margin: 80px auto;
+    width: 300px;
+    border: 4px solid green;
+    border-radius: 3px;
+    padding: 30px;
+    font-size: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+#output {
+    grid-column: 1 / span 4;
+    padding: 10px;
+    border: 3px solid green;
+    box-shadow: 2px 2px 2px blue;
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    border: 2px solid green;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px blue;
+}
+
+button:hover, button:active {
+    background-color: red;
+    box-shadow: 2px 2px 2px blue,
+                3px 3px 3px blue;
+}
+
+h1 {
+    grid-column: 1 / span 1;
+    font-size: 20px;
+}
+
+#box {
+    grid-column: 3 / span 2;
+    border-radius: 50%;
+    background-color: orange;
+    height: 40px;
+}
+
+#zero {
+    grid-column: 1 / span 2;
+}
+
+#equal {
+    grid-column: 1 / span 2;
+}
+
+#delete {
+    grid-column: 3 / span 2;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    background-color: red; 
+}
+
+@media screen and (max-width: 480px) and (min-width: 350px) {
+    .container {
+        width: 60%;
+    }
+}

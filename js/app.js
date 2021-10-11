@@ -1,11 +1,11 @@
-// const equation = "2+4";
-// const equationSpilt = equation.split("");
+const equation = "22 + 4";
+const equationSpilt = equation.split(" "); //spilt the eqution into an array
 
-// function stringToNum() {
-//     equationSpilt.forEach(element =>)
-// };
+//check if the string elements can be turned into a number
+//push these into a new array
+//calculate the total in the array
 
 
-function submitEquation () {
+function submit () {
     document.getElementById("output").innerHTML = "hello";
 }
