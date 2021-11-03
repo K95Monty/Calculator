@@ -29,6 +29,10 @@ buttons.map( button => {
                     currentDisplay.innerText = equals(currentDisplay.innerText);
                     prevDisplay.innerText = currentDisplay.innerText;
                     prevDisplay.innerText = equals(currentDisplay.innerText);
+                    if (currentDisplay.innerText === "5138008") {
+                        currentDisplay.innerText = "Hehe boobies ;)";
+                        prevDisplay.style.transform = "rotate(180deg)";
+                    }
                 }
                 catch(error) {
                     currentDisplay.innerText = "Error";
