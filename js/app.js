@@ -33,6 +33,8 @@ buttons.map( button => {
                         currentDisplay.innerText = "Hehe boobies ;)";
                         prevDisplay.style.transform = "rotate(180deg)";
                     }
+                    // else if (prevDisplay !== "" && currentDisplay[0] === operator)
+                    // {}
                 }
                 catch(error) {
                     currentDisplay.innerText = "Error";
@@ -42,9 +44,5 @@ buttons.map( button => {
                 currentDisplay.innerText += e.target.innerText;
                 break;
         }
-        // console.log("clicked");
-        // console.log(e);
-        // console.log(e.target);
-        // console.log(e.target.innerText);
     })
 })  
