@@ -24,12 +24,14 @@ buttons.map( button => {
                     currentDisplay.innerText = equals(currentDisplay.innerText);
                     prevDisplay.innerText = currentDisplay.innerText;
                     prevDisplay.innerText = equals(currentDisplay.innerText);
+                    prevDisplay.style.transform = "rotate(0deg)";
+                    prevDisplay.style.textAlign = "right";
+                    
                     if (currentDisplay.innerText === "5318008") {
                         currentDisplay.innerText = "Hehe boobies ;)";
-                        prevDisplay.style.transform = "rotate(180deg)";
+                        prevDisplay.style.transform = "rotate(180deg)"
+                        prevDisplay.style.textAlign = "left";
                     }
-                    // else if (prevDisplay !== "" && currentDisplay[0] === operator)
-                    // {}
                 }
                 catch(error) {
                     currentDisplay.innerText = "Error";
