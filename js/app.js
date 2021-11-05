@@ -19,11 +19,6 @@ buttons.map( button => {
                     currentDisplay.innerText = currentDisplay.innerText.slice(0, - 1);
                 }
                 break;
-            case ".":
-                if(!currentDisplay.innerText.includes(".")) {
-                    currentDisplay.innerText += "."
-                }
-                break;
             case "=":
                 try {
                     currentDisplay.innerText = equals(currentDisplay.innerText);
